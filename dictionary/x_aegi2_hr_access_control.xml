@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="task" label="HR Access Control" max_length="40" name="x_aegi2_hr_access_control" sizeclass="1" type="collection">
+        <element label="Access Disabled" max_length="40" name="u_access_disabled" read_only="true" type="boolean"/>
+        <element label="Access Enabled" max_length="40" name="u_access_enabled" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" label="Access Status" max_length="40" name="u_access_status" read_only="true" type="string"/>
+        <element label="Disable Override" max_length="40" name="u_disable_override" type="boolean"/>
+        <element label="Employee Name" max_length="32" name="u_employee_name" reference="sys_user" type="reference"/>
+        <element label="Enable Override" max_length="40" name="u_enable_override" type="boolean"/>
+        <element label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element label="Facility Request Number" max_length="32" name="u_facility_request_number" read_only="true" reference="facilities" type="reference"/>
+        <element label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Userid" max_length="40" name="u_userid" read_only="true" type="string"/>
+    </element>
+</database>

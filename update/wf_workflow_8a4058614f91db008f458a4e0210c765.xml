@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="wf_workflow_version">
+    <wf_workflow_version action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <activity_stages>{"subflows":[],"stages":{},"ends":["368af32e4fd51f00f2a00195f110c7b5"],"activities":{}}</activity_stages>
+        <after_business_rules>false</after_business_rules>
+        <checked_out/>
+        <checked_out_by/>
+        <column_renderer display_value="Workflow-driven">a56213111b030100adca1e094f0713ac</column_renderer>
+        <condition table="x_aegi2_hr_access_control">u_access_status=Pending^EQ<item endquery="false" field="u_access_status" goto="false" newquery="false" operator="=" or="false" value="Pending"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <condition_type>run_match</condition_type>
+        <description/>
+        <expected_sequences>078af32e4fd51f00f2a00195f110c7b9,b47b3f2e4fd51f00f2a00195f110c77c,478af32e4fd51f00f2a00195f110c7ba,cf8af32e4fd51f00f2a00195f110c7b6,f68af32e4fd51f00f2a00195f110c7b3,c38af32e4fd51f00f2a00195f110c7b8,368af32e4fd51f00f2a00195f110c7b5</expected_sequences>
+        <expected_time>1970-01-01 14:00:00</expected_time>
+        <expected_time_type/>
+        <full_sequences>078af32e4fd51f00f2a00195f110c7b9,b47b3f2e4fd51f00f2a00195f110c77c,478af32e4fd51f00f2a00195f110c7ba,cf8af32e4fd51f00f2a00195f110c7b6,f68af32e4fd51f00f2a00195f110c7b3,c38af32e4fd51f00f2a00195f110c7bb,c38af32e4fd51f00f2a00195f110c7b8,368af32e4fd51f00f2a00195f110c7b5</full_sequences>
+        <journal/>
+        <max_activity_count>100</max_activity_count>
+        <name>AEGIS HR disable access</name>
+        <not_cacheable>false</not_cacheable>
+        <on_cancel><![CDATA[// This script executes if the workflow is cancelled.// The global variable context_sys_id contains the sys_id of the cancelled workflow context.]]></on_cancel>
+        <order>100</order>
+        <pin_type>set_by_activity</pin_type>
+        <published>true</published>
+        <relative_duration display_value="2 business days by 4pm">3bf802c20a0a0b52008e2859cd8abcf2</relative_duration>
+        <requires_ert>true</requires_ert>
+        <run_multiple>false</run_multiple>
+        <schedule/>
+        <stage_field/>
+        <stage_order>computed</stage_order>
+        <start display_value="Begin">078af32e4fd51f00f2a00195f110c7b9</start>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>7a8affea4fd51f00f2a00195f110c75e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:50:05</sys_updated_on>
+        <table>x_aegi2_hr_access_control</table>
+        <timezone/>
+        <validated>true</validated>
+        <workflow display_value="AEGIS HR disable access">8a4058614f91db008f458a4e0210c765</workflow>
+    </wf_workflow_version>
+    <wf_workflow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <description/>
+        <name>AEGIS HR disable access</name>
+        <preview/>
+        <sys_class_name>wf_workflow</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-05 18:45:30</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_domain>global</sys_domain>
+        <sys_id>8a4058614f91db008f458a4e0210c765</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>AEGIS HR disable access</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="HR Access Control" source="x_aegi2_hr_access">9eb4e7514f11db008f458a4e0210c79e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="HR Access Control">9eb4e7514f11db008f458a4e0210c79e</sys_scope>
+        <sys_update_name>wf_workflow_8a4058614f91db008f458a4e0210c765</sys_update_name>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-05 18:45:30</sys_updated_on>
+        <table>x_aegi2_hr_access_control</table>
+        <template>false</template>
+        <vars/>
+    </wf_workflow>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Wait for condition">d93a02ae0a0a0aa30077abad3fdac035</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>9</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name/>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>b47b3f2e4fd51f00f2a00195f110c77c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:58</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>168</x>
+        <y>28</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b47b3f2e4fd51f00f2a00195f110c77c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b47b3f2e4fd51f00f2a00195f110c77c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>2d8b37ea4fd51f00f2a00195f110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:13</sys_updated_on>
+        <value>u_disable_override=true^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b47b3f2e4fd51f00f2a00195f110c77c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>698b37ea4fd51f00f2a00195f110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:13</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b47b3f2e4fd51f00f2a00195f110c77c</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>2d8b37ea4fd51f00f2a00195f110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:13</sys_updated_on>
+        <value>u_disable_override=true^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b47b3f2e4fd51f00f2a00195f110c77c</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>698b37ea4fd51f00f2a00195f110c7ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:13</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="">b47b3f2e4fd51f00f2a00195f110c77c</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:13</sys_created_on>
+        <sys_id>658b37ea4fd51f00f2a00195f110c7ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:13</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Begin">c7a5e32c0a0a0b3a002377c24ed8ea76</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>1</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>Begin</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>078af32e4fd51f00f2a00195f110c7b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>20</x>
+        <y>20</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=078af32e4fd51f00f2a00195f110c7b9"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Begin">078af32e4fd51f00f2a00195f110c7b9</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>8f8af32e4fd51f00f2a00195f110c7b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>8</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Create Facilities record</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c38af32e4fd51f00f2a00195f110c7b8</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:37:29</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>824</x>
+        <y>589</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c38af32e4fd51f00f2a00195f110c7b8"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7b8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c78af32e4fd51f00f2a00195f110c7b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>var facilities = new GlideRecord('facilities');&#13;
+facilities.category = "Access cards";&#13;
+facilities.state = 1;&#13;
+//facilities.location = "East Rutherford";&#13;
+facilities.short_description = ("Disable access to building" );&#13;
+facilities.caller_id = current.opened_by;&#13;
+facilities.opened_by = current.opened_by;&#13;
+facilities.assignment_group = "Fac Dpt"&#13;
+//&#13;
+facilities.description = ("Per request from HR please remove building access for  " + current.u_employee_name + " effective " + current.u_start_date + "." + " You will be notified as to when to restore access to the building" );&#13;
+//&#13;
+//var sysID = facilities.insert();&#13;
+facilities.insert();&#13;
+&#13;
+current.u_facilities_request_number = facilities.number;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7b8</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c78af32e4fd51f00f2a00195f110c7b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>var facilities = new GlideRecord('facilities');&#13;
+facilities.category = "Access cards";&#13;
+facilities.state = 1;&#13;
+//facilities.location = "East Rutherford";&#13;
+facilities.short_description = ("Disable access to building" );&#13;
+facilities.caller_id = current.opened_by;&#13;
+facilities.opened_by = current.opened_by;&#13;
+facilities.assignment_group = "Fac Dpt"&#13;
+//&#13;
+facilities.description = ("Per request from HR please remove building access for  " + current.u_employee_name + " effective " + current.u_start_date + "." + " You will be notified as to when to restore access to the building" );&#13;
+//&#13;
+//var sysID = facilities.insert();&#13;
+facilities.insert();&#13;
+&#13;
+current.u_facilities_request_number = facilities.number;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Create Facilities record">c38af32e4fd51f00f2a00195f110c7b8</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>8f8af32e4fd51f00f2a00195f110c7b8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Disable AD User Account">be42f07fcb331200ce551494634c9c9f</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>4</databus_lookup_id>
+        <height/>
+        <input>{"DomainController":"10.15.76.126","User":"${scratchpad.workflow.samacct}"}</input>
+        <is_parent>false</is_parent>
+        <name>Disable employee account</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>cf8af32e4fd51f00f2a00195f110c7b6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:49</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>288</x>
+        <y>300</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=cf8af32e4fd51f00f2a00195f110c7b6"/>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Disable employee account">cf8af32e4fd51f00f2a00195f110c7b6</activity>
+        <condition/>
+        <condition_default display_value="Failure">f242f07fcb331200ce551494634c9ca0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>true</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Failure</name>
+        <order>200</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0f8af32e4fd51f00f2a00195f110c7b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Disable employee account">cf8af32e4fd51f00f2a00195f110c7b6</activity>
+        <condition>activityOutput.result == "success"</condition>
+        <condition_default display_value="Success">7642f07fcb331200ce551494634c9ca0</condition_default>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>false</is_positive>
+        <name>Success</name>
+        <order>100</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>8b8af32e4fd51f00f2a00195f110c7b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="End">c7a66f7d0a0a0b3a004544a6d2f14076</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>2</databus_lookup_id>
+        <height/>
+        <input/>
+        <is_parent>false</is_parent>
+        <name>End</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>368af32e4fd51f00f2a00195f110c7b5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:31</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width>80</width>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>1079</x>
+        <y>700</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=368af32e4fd51f00f2a00195f110c7b5"/>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Notification">0a6c97790a0a0b2756919eb960284334</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>6</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Error disabling employee account</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c38af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:35:50</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>265</x>
+        <y>475</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c38af32e4fd51f00f2a00195f110c7bb"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0b8af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0f8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>478af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>OCIO,&#13;
+&#13;
+There was issue disabling the AD account for the following employee, ${u_employee_name}, as part of the HR disabling access process.&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>4b8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>ea4b509d6f98810069e252a03f3ee449</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>838af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>There was issue disabling account for ${u_employee_name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>cf8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>4b8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>ea4b509d6f98810069e252a03f3ee449</value>
+        <variable display_value="">c35daa890a0a0ba96248a709c32994d6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0b8af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value/>
+        <variable display_value="">ae2121c70a0a0b3459708c9a60cd7312</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>838af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>There was issue disabling account for ${u_employee_name}</value>
+        <variable display_value="">c35db2180a0a0ba96248a709d1b6df20</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>478af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>OCIO,&#13;
+&#13;
+There was issue disabling the AD account for the following employee, ${u_employee_name}, as part of the HR disabling access process.&#13;
+</value>
+        <variable display_value="">c35db5a50a0a0ba96248a70938ae8de6</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0f8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>0</value>
+        <variable display_value="">6d6816cd0a6a803f0853a8df38007572</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>c38af32e4fd51f00f2a00195f110c7bb</document_key>
+        <order>500</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>cf8af32e4fd51f00f2a00195f110c7bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>// Set the variable 'answer' to a comma-separated list of user or group sys_ids that you want the email sent to.&#13;
+</value>
+        <variable display_value="">c35dae3d0a0a0ba96248a7098ed9b4aa</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Error disabling employee account">c38af32e4fd51f00f2a00195f110c7bb</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>cf8af32e4fd51f00f2a00195f110c7bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Set Values">1ca8d7cf0a0a0b265e9a000c2c08248c</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>5</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set access is disabled</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>f68af32e4fd51f00f2a00195f110c7b3</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:37:20</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>604</x>
+        <y>453</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=f68af32e4fd51f00f2a00195f110c7b3"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f68af32e4fd51f00f2a00195f110c7b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>fe8af32e4fd51f00f2a00195f110c7b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:36:44</sys_updated_on>
+        <value>u_access_status=Network Access Disabled^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>f68af32e4fd51f00f2a00195f110c7b3</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>fe8af32e4fd51f00f2a00195f110c7b3</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:36:44</sys_updated_on>
+        <value>u_access_status=Network Access Disabled^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set access is disabled">f68af32e4fd51f00f2a00195f110c7b3</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>ba8af32e4fd51f00f2a00195f110c7b4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_activity action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
+        <activity_definition_updated>false</activity_definition_updated>
+        <databus_lookup_id>3</databus_lookup_id>
+        <height/>
+        <input>{}</input>
+        <is_parent>false</is_parent>
+        <name>Set AD userid is scratchpad variable</name>
+        <new_activity_definition/>
+        <notes/>
+        <out_of_date>false</out_of_date>
+        <parent/>
+        <pinned>false</pinned>
+        <pinned_version/>
+        <stage/>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>478af32e4fd51f00f2a00195f110c7ba</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:52</sys_updated_on>
+        <timeout>1970-01-01 00:00:00</timeout>
+        <vars/>
+        <width/>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+        <x>63</x>
+        <y>169</y>
+    </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=478af32e4fd51f00f2a00195f110c7ba"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>478af32e4fd51f00f2a00195f110c7ba</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c78af32e4fd51f00f2a00195f110c7ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>workflow.scratchpad.samacct = current.userid;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>478af32e4fd51f00f2a00195f110c7ba</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>c78af32e4fd51f00f2a00195f110c7ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <value>workflow.scratchpad.samacct = current.userid;</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
+    <wf_condition action="INSERT_OR_UPDATE">
+        <activity display_value="Set AD userid is scratchpad variable">478af32e4fd51f00f2a00195f110c7ba</activity>
+        <condition>true</condition>
+        <condition_default/>
+        <condition_type>standard</condition_type>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <is_positive>true</is_positive>
+        <name>Always</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>0f8af32e4fd51f00f2a00195f110c7ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+    </wf_condition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">ba8af32e4fd51f00f2a00195f110c7b4</condition>
+        <from display_value="Set access is disabled">f68af32e4fd51f00f2a00195f110c7b3</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>038af32e4fd51f00f2a00195f110c7be</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:37:12</sys_updated_on>
+        <to display_value="Create Facilities record">c38af32e4fd51f00f2a00195f110c7b8</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8f8af32e4fd51f00f2a00195f110c7b8</condition>
+        <from display_value="Create Facilities record">c38af32e4fd51f00f2a00195f110c7b8</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:57</sys_created_on>
+        <sys_id>0b8af32e4fd51f00f2a00195f110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:57</sys_updated_on>
+        <to display_value="End">368af32e4fd51f00f2a00195f110c7b5</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Success">8b8af32e4fd51f00f2a00195f110c7b7</condition>
+        <from display_value="Disable employee account">cf8af32e4fd51f00f2a00195f110c7b6</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:57</sys_created_on>
+        <sys_id>4b8af32e4fd51f00f2a00195f110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:57</sys_updated_on>
+        <to display_value="Set access is disabled">f68af32e4fd51f00f2a00195f110c7b3</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">0f8af32e4fd51f00f2a00195f110c7ba</condition>
+        <from display_value="Set AD userid is scratchpad variable">478af32e4fd51f00f2a00195f110c7ba</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:57</sys_created_on>
+        <sys_id>c38af32e4fd51f00f2a00195f110c7bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:57</sys_updated_on>
+        <to display_value="Disable employee account">cf8af32e4fd51f00f2a00195f110c7b6</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Failure">0f8af32e4fd51f00f2a00195f110c7b7</condition>
+        <from display_value="Disable employee account">cf8af32e4fd51f00f2a00195f110c7b6</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:57</sys_created_on>
+        <sys_id>cb8af32e4fd51f00f2a00195f110c7be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:57</sys_updated_on>
+        <to display_value="Error disabling employee account">c38af32e4fd51f00f2a00195f110c7bb</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">8f8af32e4fd51f00f2a00195f110c7b9</condition>
+        <from display_value="Begin">078af32e4fd51f00f2a00195f110c7b9</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:21</sys_created_on>
+        <sys_id>e38b7f2e4fd51f00f2a00195f110c7c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:21</sys_updated_on>
+        <to display_value="">b47b3f2e4fd51f00f2a00195f110c77c</to>
+    </wf_transition>
+    <wf_transition action="INSERT_OR_UPDATE">
+        <condition display_value="Always">658b37ea4fd51f00f2a00195f110c7ad</condition>
+        <from display_value="">b47b3f2e4fd51f00f2a00195f110c77c</from>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:27:25</sys_created_on>
+        <sys_id>e89bb7ea4fd51f00f2a00195f110c7da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:27:25</sys_updated_on>
+        <to display_value="Set AD userid is scratchpad variable">478af32e4fd51f00f2a00195f110c7ba</to>
+    </wf_transition>
+    <var_dictionary action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes/>
+        <audit>false</audit>
+        <calculation>(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);</calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label>samacct</column_label>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_samacct</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>samacct</label>
+        <mandatory>true</mandatory>
+        <max_length>10</max_length>
+        <model_id>8a4058614f91db008f458a4e0210c765</model_id>
+        <model_table>wf_workflow</model_table>
+        <name>var__m_var_dictionary_8a4058614f91db008f458a4e0210c765</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>var_dictionary</sys_class_name>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-05 18:47:24</sys_created_on>
+        <sys_customer_update>false</sys_customer_update>
+        <sys_id>c7601ce14f91db008f458a4e0210c7eb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>samacct</sys_name>
+        <sys_package display_value="HR Access Control" source="x_aegi2_hr_access">9eb4e7514f11db008f458a4e0210c79e</sys_package>
+        <sys_policy/>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="HR Access Control">9eb4e7514f11db008f458a4e0210c79e</sys_scope>
+        <sys_update_name>var_dictionary_c7601ce14f91db008f458a4e0210c7eb</sys_update_name>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-05 18:47:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </var_dictionary>
+    <sys_documentation element="u_samacct" language="en" table="var__m_var_dictionary_8a4058614f91db008f458a4e0210c765">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_samacct</element>
+            <help/>
+            <hint/>
+            <label>samacct</label>
+            <language>en</language>
+            <name>var__m_var_dictionary_8a4058614f91db008f458a4e0210c765</name>
+            <plural>samacct</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>Sikoras</sys_created_by>
+            <sys_created_on>2018-04-05 18:47:25</sys_created_on>
+            <sys_customer_update>false</sys_customer_update>
+            <sys_id>4ab0dce14f91db008f458a4e0210c7ae</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>samacct</sys_name>
+            <sys_package display_value="HR Access Control" source="x_aegi2_hr_access">9eb4e7514f11db008f458a4e0210c79e</sys_package>
+            <sys_policy/>
+            <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+            <sys_scope display_value="HR Access Control">9eb4e7514f11db008f458a4e0210c79e</sys_scope>
+            <sys_update_name>sys_documentation_var__m_var_dictionary_8a4058614f91db008f458a4e0210c765_u_samacct_en</sys_update_name>
+            <sys_updated_by>Sikoras</sys_updated_by>
+            <sys_updated_on>2018-04-05 18:47:25</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <wf_estimated_runtime_config action="INSERT_OR_UPDATE">
+        <estimated_run_time/>
+        <no_of_data_points>1</no_of_data_points>
+        <percentage_threshold_ert>20</percentage_threshold_ert>
+        <sys_created_by>Sikoras</sys_created_by>
+        <sys_created_on>2018-04-09 14:22:56</sys_created_on>
+        <sys_id>3e8affea4fd51f00f2a00195f110c75e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>Sikoras</sys_updated_by>
+        <sys_updated_on>2018-04-09 14:22:56</sys_updated_on>
+        <workflow_version display_value="AEGIS HR disable access">7a8affea4fd51f00f2a00195f110c75e</workflow_version>
+    </wf_estimated_runtime_config>
+    <wf_workflow_version action="update_multiple" query="workflow=8a4058614f91db008f458a4e0210c765^sys_id!=7a8affea4fd51f00f2a00195f110c75e">
+        <published>false</published>
+    </wf_workflow_version>
+</record_update>
